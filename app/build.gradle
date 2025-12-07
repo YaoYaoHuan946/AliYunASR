@@ -34,8 +34,6 @@ android {
     }
 
     buildFeatures {
-        // Required because we declare custom BuildConfig fields (ASR_TOKEN)
-        buildConfig true
         viewBinding true
     }
 }

@@ -27,4 +27,3 @@
 
 - 请在真实项目中补全 `AliyunAsrManager` 中标记的 `TODO` 部分，替换为官方 SDK 的初始化与回调逻辑。
 - 如果使用混淆，请根据 SDK 文档在 `proguard-rules.pro` 添加保留规则。
-- 由于使用了自定义 `BuildConfig` 字段（示例 Token），`android.buildFeatures.buildConfig` 已显式开启，保持该配置以避免构建错误。

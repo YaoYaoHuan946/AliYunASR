@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.1'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.21'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // Aliyun Maven mirror for the NUI SDK
+        maven { url 'https://maven.aliyun.com/repository/releases' }
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}
